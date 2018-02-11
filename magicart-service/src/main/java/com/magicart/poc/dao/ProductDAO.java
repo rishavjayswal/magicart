@@ -1,6 +1,14 @@
 package com.magicart.poc.dao;
 
-public interface ProductDAO {
+import java.util.List;
 
-	String fetchAllProducts();
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.magicart.poc.entity.Product;
+
+@Repository
+public interface ProductDAO extends JpaRepository<Product, Long>{
+
+	List<Product> findAll();
 }
