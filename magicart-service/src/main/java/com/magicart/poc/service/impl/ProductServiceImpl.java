@@ -10,14 +10,18 @@ import com.magicart.poc.entity.Product;
 import com.magicart.poc.service.ProductService;
 
 @Service
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
 
 	@Autowired
 	ProductDAO productDAO;
-	
+
 	@Override
 	public List<Product> fetchAllProducts() {
-		// TODO Auto-generated method stub
 		return productDAO.findAll();
+	}
+
+	@Override
+	public Product fetchProductByProductId(Long productId) {
+		return productDAO.findByProductId(productId);
 	}
 }

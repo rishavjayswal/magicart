@@ -7,4 +7,5 @@ import com.magicart.poc.entity.Product;
 public interface ProductService {
 
 	List<Product> fetchAllProducts();
+	Product fetchProductByProductId(Long productId);
 }

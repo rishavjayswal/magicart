@@ -11,4 +11,5 @@ import com.magicart.poc.entity.Product;
 public interface ProductDAO extends JpaRepository<Product, Long>{
 
 	List<Product> findAll();
+	Product findByProductId(Long productId);
 }
