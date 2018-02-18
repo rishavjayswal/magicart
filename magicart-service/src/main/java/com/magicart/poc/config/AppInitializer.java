@@ -12,7 +12,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class<?>[] {AppConfig.class, PersistenceConfig.class};
+		return new Class<?>[] {AppConfig.class, PersistenceConfig.class, SwaggerConfig.class};
 	}
 	
 	@Override
@@ -36,4 +36,6 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 		// TODO Auto-generated method stub
 		super.onStartup(servletContext);
 	}
+	
+	
 }

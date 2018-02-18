@@ -31,8 +31,4 @@ public class ProductController {
 		return new ResponseEntity<Product>(productService.fetchProductByProductId(productId), HttpStatus.OK);
 	}
 	
-	static {
-		System.out.println("********Controller bean****************");
-	}
-	
 }
