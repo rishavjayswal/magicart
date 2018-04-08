@@ -21,6 +21,9 @@ dependencies {
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 	
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'
+	compile group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.2.11'
+	compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.2.11'
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:23.0'
 
